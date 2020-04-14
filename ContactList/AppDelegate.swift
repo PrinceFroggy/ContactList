@@ -8,14 +8,29 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        Auth.auth().createUser(withEmail: "test@gmail.com", password: "1234567890")
+        { (result, error) in
+           if let _eror = error
+           {
+               print(_eror.localizedDescription )
+           }
+           else
+           {
+               print(result)
+           }
+        }
+        
         return true
     }
 
