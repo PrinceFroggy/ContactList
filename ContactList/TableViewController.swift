@@ -9,24 +9,6 @@
 import UIKit
 import Firebase
 
-class Contacts
-{
-    var firstName: String?
-    var lastName: String?
-    var email: String?
-    var phoneNumber: String?
-    var image: String?
-    
-    init(firstName: String?, lastName: String?, email: String?, phoneNumber: String?, image: String?)
-    {
-        self.firstName = firstName
-        self.lastName = lastName
-        self.email = email
-        self.phoneNumber = phoneNumber
-        self.image = image
-    }
-}
-
 class ContactsTableViewCell: UITableViewCell
 {
     @IBOutlet weak var myImage: UIImageView!

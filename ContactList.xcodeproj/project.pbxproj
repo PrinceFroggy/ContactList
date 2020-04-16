@@ -16,6 +16,7 @@
 		4911B6AE2445E3D800151E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4911B6AC2445E3D800151E12 /* LaunchScreen.storyboard */; };
 		4911B6B62445E67000151E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4911B6B52445E67000151E12 /* GoogleService-Info.plist */; };
 		4911B6BA2445F0FC00151E12 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911B6B92445F0FC00151E12 /* TableViewController.swift */; };
+		4911B6C02447E51F00151E12 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911B6BF2447E51F00151E12 /* Contacts.swift */; };
 		99608ED5CF4CD5D95C180498 /* Pods_ContactList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8773D71E5643BD70CDEAC82 /* Pods_ContactList.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		4911B6AF2445E3D800151E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4911B6B52445E67000151E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4911B6B92445F0FC00151E12 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4911B6BF2447E51F00151E12 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		A6B490A7BC585B48731BA170 /* Pods-ContactList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactList.debug.xcconfig"; path = "Target Support Files/Pods-ContactList/Pods-ContactList.debug.xcconfig"; sourceTree = "<group>"; };
 		B7FC81FF0EF175EF6CF89AF0 /* Pods-ContactList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactList.release.xcconfig"; path = "Target Support Files/Pods-ContactList/Pods-ContactList.release.xcconfig"; sourceTree = "<group>"; };
 		E8773D71E5643BD70CDEAC82 /* Pods_ContactList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				4911B6AF2445E3D800151E12 /* Info.plist */,
 				4911B6A72445E3D100151E12 /* ContactList.xcdatamodeld */,
 				4911B6B92445F0FC00151E12 /* TableViewController.swift */,
+				4911B6BF2447E51F00151E12 /* Contacts.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				4911B6A92445E3D100151E12 /* ContactList.xcdatamodeld in Sources */,
 				4911B6A32445E3D100151E12 /* ViewController.swift in Sources */,
+				4911B6C02447E51F00151E12 /* Contacts.swift in Sources */,
 				4911B69F2445E3D100151E12 /* AppDelegate.swift in Sources */,
 				4911B6BA2445F0FC00151E12 /* TableViewController.swift in Sources */,
 				4911B6A12445E3D100151E12 /* SceneDelegate.swift in Sources */,
