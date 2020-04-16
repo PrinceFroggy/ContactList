@@ -75,21 +75,13 @@ class TableViewController: UITableViewController, UISearchBarDelegate
         loading = false
         
         loadTable()
+        refreshTable()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    override func viewWillAppear(_ animated: Bool)
-    {
-        if loading == true
-        {
-            refreshTable()
-            loading = false
-        }
     }
     
     @IBAction func sorter(_ sender: UIBarButtonItem)
@@ -215,8 +207,6 @@ class TableViewController: UITableViewController, UISearchBarDelegate
     
     func refreshTable()
     {
-        myContacts.remove(at: row)
-        
         ref = Database.database().reference()
         
         ref.child("Contacts").child("testpls").queryOrdered(byChild: "phoneNumber").observe(.childChanged, with:
@@ -228,9 +218,12 @@ class TableViewController: UITableViewController, UISearchBarDelegate
                 let email = results?["email"]
                 let phoneNumber = results?["phoneNumber"]
                 let image = results?["myImageURL"]
-                let contact = Contacts(firstName: firstName as! String?, lastName: lastName as! String?, email: email as! String?, phoneNumber: phoneNumber as! String?, image: image as! String?)
                 
-                self.myContacts.append(contact)
+                self.myContacts[self.row].firstName = firstName as! String
+                self.myContacts[self.row].lastName = lastName as! String
+                self.myContacts[self.row].email = email as! String
+                self.myContacts[self.row].phoneNumber = phoneNumber as! String
+                self.myContacts[self.row].image = image as! String
                 
                 DispatchQueue.main.async
                 {
